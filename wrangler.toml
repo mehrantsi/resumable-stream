@@ -1,0 +1,12 @@
+name = "resumable-stream"
+main = "src/index.js"
+compatibility_date = "2025-03-10"
+
+[durable_objects]
+bindings = [
+  { name = "COUNTER_SESSION", class_name = "CounterSession" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["CounterSession"] 
